@@ -5,7 +5,7 @@ metadata:
   name: httpd-pod
 spec:
   containers:
-    - name: httpd-container
+    - name: nginx
       image: nginx
       ports:
         - containerPort: 80
