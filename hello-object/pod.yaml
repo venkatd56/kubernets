@@ -6,17 +6,10 @@ metadata:
 spec:
   containers:
     - name: httpd-container
-      image: httpd
+      image: nginx
       ports:
         - containerPort: 80
-    - name: mysql-container
-      image: mysql:5.7
-      ports:
-        - containerPort: 3306
-      env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: "hardcode@56"
-      
+
 
 
 
