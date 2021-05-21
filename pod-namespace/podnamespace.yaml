@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-ns-pod
+  namespace: dev-env
+spec:
+  containers:
+    - name: jenkinscont
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
