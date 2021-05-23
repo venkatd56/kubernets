@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: huge-res-req-demo
+  name: label-demo1
   labels:
     environment: dev
     team: infra-ops
