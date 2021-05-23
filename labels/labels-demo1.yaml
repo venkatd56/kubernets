@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: huge-res-req-demo
+  labels:
+  environment: dev
+  team: infra-ops
+  project: qt-ecomm
+spec:
+  containers:
+    - name: container-with-limits
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
