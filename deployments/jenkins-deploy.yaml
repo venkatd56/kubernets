@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Jenkins_deployement
+  name: Jenkins-deployement
   labels:
     app: jenkins
 spec:
@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app: jenkinsapp
   strategy:
-      type: RollingUpdate
+      type: RollingUpdate 
       rollingUpdate:
         maxSurge: 25%
         maxUnavailable: 25%
