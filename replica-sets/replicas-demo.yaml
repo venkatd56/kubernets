@@ -21,13 +21,15 @@ spec:
           name:  httpd-container
           ports:
           - name: http-port
-            port: 80
+            containerPort: 80
             protocol: TCP
           livenessProbe:
             httpGet:
-            port: 80
-            path: /
+              port: 80
+              path: /
             initialDelaySeconds: 10
             periodSeconds: 5
             successThreshold: 1
             failureThreshold: 1
+            
+
