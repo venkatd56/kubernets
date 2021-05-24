@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Jenkins-deployement
+  name: jenkins-deployement
   labels:
     app: jenkins
 spec:
